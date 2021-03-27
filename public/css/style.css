@@ -9,11 +9,50 @@
 
 body {
     margin: 0px;
+    background-color: #ebebeb;
+    margin: 5%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 /********************************Style header*******************/
+
+
+
+    .categoria h2 {
+        margin: 10px;
+    }
+    
+    .articulos article{
+        margin: 10px;
+        border: 1px solid white;
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+
+        .articulos article .detalle{
+            padding: 15px;
+            background-color: white;
+            
+        }
+        .articulos article .detalle .nombre{
+         display: none;
+        }
+
+        .articulos article .detalle .descuento{
+            color: green;
+        }
+        .articulos article .detalle i{
+            font-size: 24px;
+            color: green;
+            border: 1px solid green;
+            border-radius: 0px;
+            padding: 25px;
+        }
+
+
+
+
+
 
 .main-header {
     background-color: #EAC926;    
