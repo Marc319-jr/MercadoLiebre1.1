@@ -90,19 +90,37 @@ body {
 /******************************style footer************************/
 
 footer .beneficios{
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 15px;
+
+}
+   
+
+
+footer .beneficios .beneficio
+{
+    margin-top: 10px;
+    margin:auto;
+    padding: 10px;
+    max-width: 380px;
 }
 
 footer .beneficio h2 {
-    margin: 0;
+    margin: 0px;
+    
 }
 
 footer .beneficio p {
-    margin: 0;
+    margin: auto;
+    max-width: 310px;
+}
+
+footer .beneficio i{
+    font-size: 2em;
+    margin: 10px;
+    color: #1259c3;
 }
 
 
@@ -127,6 +145,8 @@ footer .beneficio p {
         justify-content: space-between;
     }
 
+
+    /******************************style header**********************/
     
     .copy-header {
         max-width: 350px;
@@ -158,8 +178,47 @@ justify-content: space-between;
         max-width: 10px;
 
     }
+
+
+    /*******************************fin style header******************/
     
 
+    /******************************style body*************************/
+
+
+    /******************************fin style body*********************/
+
+
+
+    /******************************style footer***********************/
+    footer .beneficios{
+        margin: auto;
+        display: flex;
+        max-width: 720px;
+    }
+
+
+    footer .beneficios .beneficio{
+        max-width: 700px;
+        margin: 0px;   
+    }
+
+    footer .beneficios .beneficio i{
+        font-size: 40px;
+    }
+
+    footer .beneficios .beneficio h2
+    {
+        font-size: 30px;
+    }
+
+    footer .beneficios .beneficio p{
+        max-width: 500px;
+        font-size: 19px;
+    }
+
+
+    /******************************fin style footer******************/
 }
 
 
@@ -171,6 +230,9 @@ justify-content: space-between;
 /****************************version desktop***********************/
 
 @media (min-width: 1200px ) {
+
+
+  /***************************style header***********************/
 
     .logo {
         width: 250px;
@@ -206,13 +268,44 @@ justify-content: space-between;
     margin: 0px;
     }
 
+  /********************************fin style header*******************/
+
+
+  /*******************************style body**************************/
+
+  /******************************fin style body***********************/
+
+
+
+
+
+  /******************************style footer************************/
+
+    footer .beneficios{
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
+    
+    
+
+
+
+
+
+
+  /******************************fin style footer********************/
+
+    
 
     /***************************fin version desktop*************************/
 
 
 
-
+}
 
 
 
