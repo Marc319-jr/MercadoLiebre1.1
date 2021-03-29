@@ -8,72 +8,13 @@
 
 
 body {
-    margin: 0px;
+    
     background-color: #ebebeb;
-    margin: 5%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
 /********************************Style header*******************/
-
-
-
-    .categoria h5 {
-        margin: 10px;
-        opacity: 60%;
-        font-weight: 700;
-        font-size: 34px;
-
-    }
-    
-    .articulos article{
-        margin:40px 0px;
-        border: 1px solid white;
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-    }
-
-        .articulos article .detalle{
-            padding: 15px;
-            background-color: white;
-            
-        }
-        .articulos article  .nombre{
-         display: none;
-        }
-
-        .articulos article .detalle .descuento{
-            color: green;
-        }
-        .articulos article .detalle i{
-            font-size: 16px;
-            color: green;
-            padding: 8px;
-            
-           
-            
-        }
-
-        .articulos article .detalle .truck{
-            border: 1px solid green;
-            box-sizing: border-box;
-            width: 50px;
-            height: 50px;
-            border-radius: 50px;
-            margin: 0;
-        }
-
-        .articulos article .precio h3{
-            margin: 0px;
-        }
-
-        .articulos article .descuento h3{
-            margin: 0px;
-        }
-
-
-
-
 
 
 .main-header {
@@ -124,6 +65,62 @@ body {
 
 
 /******************************style section************************/
+
+body {margin: 0px;}
+
+
+.categoria h5 {
+    margin: 10px;
+    opacity: 60%;
+    font-weight: 700;
+    font-size: 34px;
+
+}
+
+.articulos article{
+    margin:40px 0px;
+    border: 1px solid white;
+}
+
+    .articulos article .detalle{
+        padding: 15px;
+        background-color: white;
+        
+    }
+    .articulos article  .nombre{
+     display: none;
+    }
+
+    .articulos article .detalle .descuento{
+        color: green;
+    }
+    .articulos article .detalle i{
+        font-size: 16px;
+        color: green;
+        padding: 8px;
+        
+       
+        
+    }
+
+    .articulos article .detalle .truck{
+        border: 1px solid green;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 0;
+    }
+
+    .articulos article .precio h3{
+        margin: 0px;
+    }
+
+    .articulos article .descuento h3{
+        margin: 0px;
+    }
+
+
 
 
 
@@ -236,7 +233,7 @@ justify-content: space-between;
 
 
     .main-navbar ul li{
-    margin: 0 10px;
+    margin: 0 7px;
     }
 
     
@@ -251,6 +248,29 @@ justify-content: space-between;
 
     /******************************style body*************************/
 
+
+    body .categoria{
+        padding: 40px
+    }
+
+    
+    body .categoria .articulos {
+       display: flex;
+       flex: 2 1 auto;
+       flex-flow: wrap;
+       justify-content: space-around;
+
+    }
+
+
+    body .categoria .articulos article {
+        flex: 1 1 40%;
+        margin: 10px;
+        align-self: start;
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+
+    }
+   
 
     .categoria .articulos article .nombre {
         display: block;
@@ -310,6 +330,10 @@ justify-content: space-between;
         box-sizing: border-box;
 
     }
+
+
+
+
 
 }
 
@@ -389,6 +413,11 @@ justify-content: space-between;
         font-size: 19px;
     }
 
+    .main-navbar ul li{
+        margin: 0 10px;
+        }
+    
+
     .copy-header {
     max-width: none;
     font-size: 18px;
@@ -400,6 +429,23 @@ justify-content: space-between;
 
 
   /*******************************style body**************************/
+
+
+
+
+  body .categoria .articulos {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+ }
+
+
+ body .categoria .articulos article {
+     flex: 1 1 15%;
+     margin: 10px;
+ }
+
+
 
   /******************************fin style body***********************/
 

@@ -12,7 +12,9 @@ app.get('/' , (req,res) => {
 });
 
 app.get('/test' , (req,res) => {
-    res.sendFile(path.join(__dirname ,'/views/pruebas.html'))
+    res.sendFile(path.join(__dirname ,'/views/test.html'))
 });
+
+
 
 app.listen(server , () => console.log("levantando un servidor"));
