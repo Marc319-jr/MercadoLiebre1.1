@@ -16,5 +16,10 @@ app.get('/test' , (req,res) => {
 });
 
 
+app.get('/register' , (req,res) => 
+{
+    res.sendFile(path.join(__dirname , '/views/register.html'))
+})
+
 
 app.listen(server , () => console.log("levantando un servidor"));

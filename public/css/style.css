@@ -32,6 +32,32 @@ body {
     text-align: center;
 }
 
+.main-header .search-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius:15px;
+    width: 280px;
+    margin: 20px auto;
+    
+}
+
+.main-header .search-bar input{
+    margin: 10px;
+    opacity: 80%;
+    border :none
+}
+
+.main-header .search-bar i{
+    background-color: white;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+    opacity: 80%;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
 .hambu-button {
     color: white;
     background-color: #03264c;
@@ -68,14 +94,14 @@ body {
 
 body {margin: 0px;}
 
-body .categoria{
-    padding: 40px;
+body .categorias{
+    padding:10px;
     width: auto;
 }
 
 
 .categoria h5 {
-    margin: 10px;
+    margin: 10px 0;
     opacity: 60%;
     font-weight: 700;
     font-size: 34px;
@@ -83,28 +109,31 @@ body .categoria{
 }
 
 .articulos article{
-    margin:40px 0px;
-    border: 1px solid white;
+    margin:20px 0px;
+    background-color: white;
 }
 
     .articulos article .detalle{
-        padding: 15px;
+        padding: 10px;
+        margin: 0px 5px;
         background-color: white;
         
     }
-    .articulos article  .nombre{
-     display: none;
+    .articulos article .nombre{
+     display: block;
+     margin: 12px;
+    }
+
+    .articulos article .nombre h3{
+        margin: 0;
     }
 
     .articulos article .detalle .descuento{
         color: green;
+        width: auto
     }
 
     
-
-
-
-
     .articulos article .detalle i{
         font-size: 16px;
         color: green;
@@ -125,35 +154,25 @@ body .categoria{
 
     .articulos article .precio h3{
         margin: 0px;
+        width: 60px;
     }
 
     .articulos article .descuento h3{
-        margin: 0px;
+        margin: 0
     }
-
-
-
 
 
 .categoria .articulos article .detalle .truck{
     margin-top: 0px;
 }
 
-.categoria h2{
-    font-size: 24px;
-}
 
 .categoria .articulos .precio {
     font-size: 18px;
 }
 
-.categoria .articulos .descuento {
-    font-size: 16px;
-}
 
-.categoria .articulos .nombre {
-    font-size: 16px;
-}
+
 
 
 
@@ -217,26 +236,37 @@ footer .beneficio i{
 @media (min-width: 768px) {
     .main-header-top-bar{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
     /******************************style header**********************/
     
-    .copy-header {
-        max-width: 350px;
+
+
+    .main-header-top-bar .copy-header {
+        max-width: 340px;
         align-self: center;
     }
+
+    .main-header-top-bar .search-bar{
+        height: 40px;
+        align-self: center;
+        margin: 10px;
+        width: 350px;
+        
+    }
     
+
 
     .hambu-button {
         display: none;
     }
 
     .main-navbar {
-display: flex;
-justify-content: space-between;
-}
+    display: flex;
+    justify-content: space-between;
+    }
 
     .main-navbar ul{
         display: flex;
@@ -259,43 +289,26 @@ justify-content: space-between;
 
     /******************************style body*************************/
 
-
-    body .categoria{
-        padding: 40px;
-        width: auto;
-        border: 1px solid black;
-        
-        
-    }
-
-    
-    body .categoria .articulos {
-        width: auto;
-        display: flex;
-        flex: 2 1 auto;
-        flex-wrap: wrap;
-       border: 1px solid black;
-
-
-    }
-
-
-    body .categoria .articulos article {
-        flex: 1 1 40%;
+    body .categorias
+    {
         margin: 10px;
-        align-self: start;
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
-        background-color: white;
-
-
+        padding: 30px;
     }
-   
 
-    .categoria .articulos article .nombre {
-        display: block;
-        padding: 1px;
-        padding-left:35px;
-        
+    body .categorias .categoria
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body .categorias .categoria .articulos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body .categorias .categoria .articulos article{
+        margin: 10px;
+        flex: 1 1 45%;
     }
 
 
@@ -303,33 +316,25 @@ justify-content: space-between;
         display: flex;
         justify-content: space-between;
         border-top: 3px solid  #ebebeb;
+        padding: 18px 0;
+        margin-top: 5px;
+
     }
 
-        
-    
 
+        
     .categoria .articulos article .detalle .precio{
         flex: 0.1 1 auto;
     }
 
     .categoria .articulos article .detalle .descuento h3 {
         margin-top: 4px;  
-        font-size: 14px;
-        width: auto;
+        width: auto
     }
 
     .categoria .articulos article .detalle .descuento{
         flex: 12 1 auto
     }
-
-    .categoria .articulos article .detalle .nombre {
-        display: flex;
-    }
-
-    .categoria .articulos article .detalle .nombre h3{
-        align-self: flex-end;
-    }
-
 
     .categoria .articulos article .detalle .truck{
         background-color: white;
@@ -341,26 +346,29 @@ justify-content: space-between;
     .categoria .articulos article .detalle .truck i{
         font-size: 24px;
         margin-top: -5px;
-        
-    
+    }
 
+    .categoria .articulos article .nombre h3{
+        margin: 0;
+        width: auto;
+        padding-left: 12px;
     }
 
     .categoria .articulos article .detalle div{
         margin: 10px;
         padding: 10px;
-        box-sizing: border-box;
-
     }
-
-
-
-
 
 }
 
 
     /******************************fin style body*********************/
+
+
+
+
+
+
 
 
 
@@ -401,6 +409,11 @@ justify-content: space-between;
 
 
 
+
+
+
+
+
 /****************************version desktop***********************/
 
 @media (min-width: 1200px ) {
@@ -415,20 +428,20 @@ justify-content: space-between;
 
     .main-header-top-bar {
     max-width:1200px;
-    margin: auto;
+    margin:20px auto;
     align-items: center;
 
+    }
+
+    .main-header  .main-header-top-bar .search-bar    {
+        width: 500px;
     }
 
 
 
     .main-navbar{
-        max-width:1200px;
+        max-width:1100px;
         margin: auto;
-    }
-
-    .main-navbar {
-        margin-top: 50px;
     }
 
     .main-navbar a{
@@ -436,7 +449,7 @@ justify-content: space-between;
     }
 
     .main-navbar ul li{
-        margin: 0 10px;
+        margin: 15px 20px;
         }
     
 
@@ -453,19 +466,10 @@ justify-content: space-between;
   /*******************************style body**************************/
 
 
-
-
-  body .categoria .articulos {
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: space-between;
- }
-
-
- body .categoria .articulos article {
-     flex: 1 1 20px;
-     margin: 10px;
- }
+  body .categorias .categoria .articulos article{
+    margin: 10px;
+    flex: 1 1 20%;
+}
 
 
 
