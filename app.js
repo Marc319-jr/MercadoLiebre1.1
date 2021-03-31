@@ -7,19 +7,22 @@ const path = require ('path');
 app.use(express.static('public'));
 
 
-app.get('/' , (req,res) => {
+app.get('/index' , (req,res) => {
     res.sendFile(path.join(__dirname, './views/index.html'))
 });
-
-app.get('/test' , (req,res) => {
-    res.sendFile(path.join(__dirname ,'/views/test.html'))
-});
-
 
 app.get('/register' , (req,res) => 
 {
     res.sendFile(path.join(__dirname , '/views/register.html'))
+});
+
+app.get('/login' , (req,res) => 
+{
+    res.sendFile(path.join(__dirname , '/views/login.html'))
 })
+
+
+
 
 
 app.listen(server , () => console.log("levantando un servidor"));
