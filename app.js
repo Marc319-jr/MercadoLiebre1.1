@@ -26,6 +26,6 @@ app.get('/login' , (req,res) =>
 
 
 
-app.listen(puerto || server, function() {
+app.listen(puerto || 3000, function() {
     console.log("Servidor corriendo en el puerto 3000");
 });
