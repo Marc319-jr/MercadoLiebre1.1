@@ -1,8 +1,9 @@
-const server =  3000;
+const server = 3000;
 const express = require('express');
 const { dirname } = require('path');
 const app = express();
 const path = require ('path');
+const puerto = process.env.PORT;
 
 app.use(express.static('public'));
 
@@ -25,4 +26,6 @@ app.get('/login' , (req,res) =>
 
 
 
-app.listen(server , () => console.log("levantando un servidor"));
+app.listen(puerto || server, function() {
+    console.log("Servidor corriendo en el puerto 3000");
+});

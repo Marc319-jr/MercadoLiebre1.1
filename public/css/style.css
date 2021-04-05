@@ -129,9 +129,11 @@ body .categorias{
         margin: 0;
     }
 
+
+
     .articulos article .detalle .descuento{
         color: green;
-        width: auto
+        width: 80px
     }
 
     
@@ -499,6 +501,15 @@ footer h3{
     width: 20%;
 }
 
+body .categorias .categoria .articulos article .descuento h3{
+    width: 80px;
+}
+
+body .categorias .categoria .articulos article .truck{
+    position: relative;
+    right: 30px;
+}
+
 
 
   /******************************fin style body***********************/
@@ -609,6 +620,17 @@ body .forms .botones button{
 
 
 /************************************Register.HTML*****************************/
+
+body .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+body .forms .sing-in{
+    margin-top: 330px;
+    
+}
 
 body .forms .sing-in h2{
     margin-left: 20px ;
