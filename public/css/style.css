@@ -91,9 +91,18 @@ body {
 
 /******************************style section************************/
 
+
+
+
 body {margin: 0px;
     background-color: #ebebeb;
 }
+
+body .banner{
+    margin-top: 280px;
+}
+
+
 
 body .categorias{
     padding:10px;
@@ -312,6 +321,10 @@ footer h3{
     {
         margin: 10px;
         padding: 30px;
+    }
+
+    body .banner{
+        margin-top: 170px;
     }
 
     body .categorias .categoria
@@ -543,7 +556,12 @@ body .categorias .categoria .articulos article .truck{
     /***************************fin version desktop*************************/
 
 
-
+}
+@media  (max-width: 522px) {
+    body .banner{
+        margin-top: 325px;
+    }
+    
 }
 
 /********************************fin index.html*****************************/
@@ -625,6 +643,7 @@ body .main-header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 }
 
 body .forms .sing-in{
