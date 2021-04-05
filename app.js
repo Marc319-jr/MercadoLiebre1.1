@@ -1,4 +1,3 @@
-const server = 3000;
 const express = require('express');
 const { dirname } = require('path');
 const app = express();
@@ -8,7 +7,7 @@ const puerto = process.env.PORT;
 app.use(express.static('public'));
 
 
-app.get('/index' , (req,res) => {
+app.get('/' , (req,res) => {
     res.sendFile(path.join(__dirname, './views/index.html'))
 });
 
