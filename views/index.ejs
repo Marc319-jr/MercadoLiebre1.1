@@ -1,51 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel = "stylesheet" href = "./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
-   
-    <title>Document</title>
-</head>
+    <%- include('./partials/head') %>
+
 <body>
 
-    <header class = "main-header">
-       
-            <div class="main-header-top-bar">
-                <a href = "/"> <img src = "/images/logo.svg" class = "logo"></a>
-                <form class = "search-bar">
-                    <input type = "text" value="Que deseas buscar?">
-                    <i class="fas fa-search"></i>
-              </form>
-              <h2 class = "copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                Compra en cuotas y sin tarjeto de credito</h2>
-            </div>
+    <%- include('./partials/header') %>
 
-            <a href="#" class="hambu-button">
-                <i class="fas fa-bars"></i>
-            </a>
-
-            <nav class ="main-navbar">
-                <ul class = "left-navbar">
-                    <li><a href ="#">ofertas</a></li>
-                    <li><a href ="#">Tiendas oficiales</a></li>
-                    <li><a href ="#">Vender</a></li>
-                    <li><a href ="#">Ayuda</a></li>
-                </ul>
-
-                <ul class = "right-navbar">
-                    <li><a href ="./users/register">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
-                    <li><a href ="./users/login"">Ingresa<i class="fas fa-sign-in-alt"></i></a> </li>
-                    <li><a href ="#">Mis compras <i class="fas fa-shopping-basket"></i></a> </li>
-                </ul>
-            </nav>
-    </header>
 
     <section class = "banner">
         <img src="/images/banner.jpg" width="100%">
@@ -290,39 +250,8 @@
     </section>
 </div>
 
-    <footer>
-        <div class = "beneficios">
-            <div class = "beneficio">
-                <i class="fab fa-cc-visa"></i>
-                <h2>Paga con tarjeta o en efectivo</h2>     
-                <p>Con MercadoLiebre tenes cuotas sin inters con tarjeta o efectivo en puntos de pago! Y siempre es seguro!</p>
-            </div>
+<%- include('./partials/footer') %>
 
-            <div class="beneficio">
-                <i class="fas fa-gift"></i>
-                <h2>Envio Gratis desde los $ 2.500</h2>
-                <p>Solo por estar registrado en MercadoLiebre tenes envios gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-
-            </div>
-
-            <div class="beneficio">
-                <i class="fas fa-user-shield"></i>
-                <h2>Seguridad de pricipio a fin</h2>
-                <p>No te gusta? Devolvelo! En MercadoLiebre tenes envios gratis en miles de productos. Es un beneficio de Mercado 
-                    Puntos
-                </p>
-            </div>
-
-           
-
-        </div>
-
-        <div class = "copyright">
-            <h3>Copyrigth 1999-2020 MercadoLiebre S.R.L</h3>
-        </div>
-
-
-    </footer>
 
 
 </body>
