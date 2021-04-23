@@ -1,11 +1,11 @@
-const server =  3000;
 const express = require('express');
 const { dirname } = require('path');
 const app = express();
 const path = require ('path');
+const puerto = process.env.PORT;
+
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-
 
 
 //declaracion de rutas
@@ -19,4 +19,6 @@ app.use('/',indexRouter);
 
 
 
-app.listen(server , () => console.log("levantando un servidor"));
+app.listen(puerto || 3000, () => {
+    console.log("Servidor corriendo en el puerto 3000");
+});

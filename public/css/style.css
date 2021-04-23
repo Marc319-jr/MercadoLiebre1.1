@@ -91,9 +91,18 @@ body {
 
 /******************************style section************************/
 
+
+
+
 body {margin: 0px;
     background-color: #ebebeb;
 }
+
+body .banner{
+    margin-top: 280px;
+}
+
+
 
 body .categorias{
     padding:10px;
@@ -129,9 +138,11 @@ body .categorias{
         margin: 0;
     }
 
+
+
     .articulos article .detalle .descuento{
         color: green;
-        width: auto
+        width: 80px
     }
 
     
@@ -171,6 +182,9 @@ body .categorias{
 .categoria .articulos .precio {
     font-size: 18px;
 }
+
+.categoria .articulos article .nombre {opacity: 0;}
+
 
 
 
@@ -312,6 +326,10 @@ footer h3{
         padding: 30px;
     }
 
+    body .banner{
+        margin-top: 170px;
+    }
+
     body .categorias .categoria
     {
         display: flex;
@@ -321,11 +339,19 @@ footer h3{
     body .categorias .categoria .articulos{
         display: flex;
         flex-wrap: wrap;
+
     }
 
     body .categorias .categoria .articulos article{
         margin: 10px;
         flex: 1 1 45%;
+        box-shadow: 0 2px 2px rgba (0,0,0,0.2);
+        border-radius: 15px;
+    }
+
+    body .categorias .categoria .articulos article:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 15px 2px rgba (0,0,0,0.2);
     }
 
 
@@ -336,6 +362,10 @@ footer h3{
         padding: 18px 0;
         margin-top: 5px;
 
+    }
+
+    body .categorias .categoria .articulos article .nombre:hover{
+        opacity: 1;
     }
 
 
@@ -365,12 +395,15 @@ footer h3{
         margin-top: -5px;
     }
 
+   
+
     .categoria .articulos article .nombre h3{
         margin: 0;
         width: auto;
         padding-left: 12px;
     }
 
+ 
     .categoria .articulos article .detalle div{
         margin: 10px;
         padding: 10px;
@@ -499,6 +532,15 @@ footer h3{
     width: 20%;
 }
 
+body .categorias .categoria .articulos article .descuento h3{
+    width: 80px;
+}
+
+body .categorias .categoria .articulos article .truck{
+    position: relative;
+    right: 30px;
+}
+
 
 
   /******************************fin style body***********************/
@@ -532,7 +574,12 @@ footer h3{
     /***************************fin version desktop*************************/
 
 
-
+}
+@media  (max-width: 522px) {
+    body .banner{
+        margin-top: 325px;
+    }
+    
 }
 
 /********************************fin index.html*****************************/
@@ -546,11 +593,13 @@ footer h3{
 
 /************************************login.html***************************/
 
+
+
 body .forms .log-in{
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 400px;
     margin-bottom: 100px;
     max-width: 720px;
 
@@ -597,7 +646,7 @@ body .forms .botones button{
 
     body .forms .log-in{
         margin: auto;
-        margin-top: 200px;
+        margin-top: 300px;
         margin-bottom: 200px;
     }
 }
@@ -609,6 +658,18 @@ body .forms .botones button{
 
 
 /************************************Register.HTML*****************************/
+
+body .main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+body .forms .sing-in{
+    margin-top: 330px;
+    
+}
 
 body .forms .sing-in h2{
     margin-left: 20px ;
