@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+<body>
+    <%- include('./partials/header') %>
+
+
+<section class = "forms">
+
+    <form action ="" method = "POST" class ="sing-in">
+        <div class="barras">
+            <input type ="text" class = "user" placeholder="Nombre y apellido" required>
+            <input type ="text" class = "user" placeholder="Nombre de usuari@" required>
+            <h2>Fecha de nacimiento</h2>
+            <input type ="date" class = "user" placeholder="Fecha de Nacimiento" required>
+            <input type ="text" class = "user" placeholder="Domiciolio" required>
+            <h2>Prefil de Usuario</h2>
+            <div class = "perfil-usuario">
+            <div>
+                <input type="radio" name="interests" value="a" id="a">
+                <label for="a">Comprador</label>
+            </div>
+            <div>
+                <input type="radio" name="interests" value="b" id="b">
+                <label for="b">Vendedor</label>
+            </div>
+            </div>
+
+            <div class = "foto-perfil">
+                <label for ="avatar">Seleccionar una imagen para el perfil</label>
+                <input type="file" name = "avatar" accept=".jpg">
+            </div>
+
+            <h2>Intereses</h2>
+            <div class = "interes-usuario">
+            <div>
+                <input type="checkbox" name="interests" value="a" id="a">
+                <label for="a">Electro</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interests" value="b" id="b">
+                <label for="b">Moda</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interests" value="c" id="c">
+                <label for="c">Hogar</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interests" value="d" id="d">
+                <label for="d">Juguetería</label>
+            </div>
+            <div>
+                <input type="checkbox" name="interests" value="e" id="e">
+                <label for="e">Vida sana</label>
+            </div>
+        </div>
+
+            <input type ="password" class ="user" placeholder="Conraseña">
+            <input type ="password" class ="user" placeholder="Confirmar conraseña">
+        </div>
+
+
+        <div class="botones">
+            <button class="btn-reset" type="reset">Limpiar</button>
+            <button class="btn-enviar" type="submit">Enviar</button>
+        </div>
+
+
+    </form>
+
+</section>
+
+
+
+
+
+
+<%- include('./partials/footer') %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -3,24 +3,18 @@ const express = require('express');
 const { dirname } = require('path');
 const app = express();
 const path = require ('path');
-
 app.use(express.static('public'));
+app.set('view engine', 'ejs');
 
 
-app.get('/index' , (req,res) => {
-    res.sendFile(path.join(__dirname, './views/index.html'))
-});
 
-app.get('/register' , (req,res) => 
-{
-    res.sendFile(path.join(__dirname , '/views/register.html'))
-});
+//declaracion de rutas
+const userRouter = require('./routes/userRouter');
+const indexRouter = require('./routes/indexRouter');
 
-app.get('/login' , (req,res) => 
-{
-    res.sendFile(path.join(__dirname , '/views/login.html'))
-})
-
+//uso de rutas
+app.use('/users' , userRouter);
+app.use('/',indexRouter);
 
 
 
