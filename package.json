@@ -4,12 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
     "dev": "nodemon app.js"
-=======
-    "start": "node app.js"
->>>>>>> ce50053d76d473c8496ec50c18fa56553c6311bd
   },
   "repository": {
     "type": "git",
