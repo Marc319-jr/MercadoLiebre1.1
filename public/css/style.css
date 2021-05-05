@@ -761,6 +761,10 @@ body .show-producto form{
 
 }
 
+body .show-producto form .descuento{
+    color:green
+}
+
 
 body .show-producto .counter{
     justify-content: center;  
@@ -789,9 +793,10 @@ body .show-producto button{
 @media screen and (min-width:768px) {
     body .show-producto{
     margin: 280px 20px;
-    margin-bottom: 100px;
+    margin-bottom: 170px;
     display: flex;
     flex-direction: row;
+    padding: 30px;
     }
 
     body .show-producto img{
