@@ -3,7 +3,25 @@
     <%- include('./partials/head') %>
 <body>
     <%- include('./partials/headercat') %>
-
+    <form class = "creacion" action="/products/crear" method="POST" enctype="multipart/form-data">
+        <label for = "nombre">Nombre producto: </label>
+        <input type="text" name = "nombre" >
+        <br>
+        <br>
+        <label for = "precio">Precio: </label>
+        <input type="text" name = "precio" >
+        <br>
+        <br>
+        <label for = "descuento">Descuento: </label>
+        <input type="text" name = "descuento" >
+        <br>
+        <br>
+        <label for = "imagen">Imagen: </label>
+        <input type = "file" name = "imagen">
+        <br>
+        <br>
+        <input type = "submit" value="CREAR">
+        </form>
 
 
 

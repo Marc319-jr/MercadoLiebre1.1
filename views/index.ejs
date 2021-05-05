@@ -20,39 +20,37 @@
             <div class="empty">
                 <h1>AUN NO HAY PRODUCTOS PARA PRESENTAR</h1>
             </div>
-        <% } %>
+        <% } else { %>
         <section class = "articulos">
+            <% for(let i = 0; i<productos.length || i>3  ;i++) { %> 
+
             <article>
                 <a href = "./products/product">
-                <div class = "foto">
-                    <img src = "/images/cafetera.jpg" width = "100%">
+                <div class = "imagen">
+                    <img src = "/images/<%= productos[i].imagen %>" alt = "" width = "100%">
                 </div>
-                
-                <div class = "detalle">
-
                 <div class = "truck">
                     <i class="fas fa-truck"></i>
                 </div>
                 <div class = "precio">
-                    <h3>$6.770</h3>
+                    <h3>$<%= productos[i].precio %> </h3>
                 </div>
 
                 <div class = "descuento">
-                    <h3>40% OFF</h3>
+                    <h3> <%= productos[i].descuento %> OFF</h3>
                 </div>
-            </div>
-       
-
-
+            
                  <div class = "nombre">
-                    <h3>cafetera Moulinex</h3>
+                    <h3> <%= productos[i].nombre %> </h3>
                 </div>
             </a>
             </article>
-
-
-            
+            <%  } %>
+            <%  } %>
+    
     </section>
+</section>
+
 </div>
 
 <%- include('./partials/footer') %>

@@ -8,6 +8,15 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 
+//Declaraciones necesarias para poder utilziar POST
+app.use(express.urlencoded ({extended:false}));
+app.use(express.json());
+
+
+//Declaraciones necesarias para PUT Y DELETE
+const methodOverrider = require('method-override');
+app.use(methodOverrider("_method"));
+
 //declaracion de rutas
 const userRouter = require('./routes/userRouter');
 const indexRouter = require('./routes/indexRouter');

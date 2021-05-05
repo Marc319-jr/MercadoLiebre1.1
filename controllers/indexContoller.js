@@ -15,6 +15,8 @@ const controller = {
         console.log("Leo de un archivo de productos");
         productos = JSON.parse(archivoProductos);
         }
+        console.log("estoy enviando a: ");
+        console.log(productos)
         res.render('index' , {'productos' : productos})
     }
 }

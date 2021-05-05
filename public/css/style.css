@@ -812,7 +812,21 @@ body .show-producto button{
     }
 }
 
+/************************creacion de producto******************************************/
 
+body .creacion{ 
+    margin: 0 20px;
+    padding: 20px;
+    margin-top: 500px;
+    background-color: white;
+    margin-bottom: 400px;
+    border-radius: 10px;
+}
+
+body .creacion input{
+    margin: 20px 0 ;
+    width: 160px;
+}
 
 
 
