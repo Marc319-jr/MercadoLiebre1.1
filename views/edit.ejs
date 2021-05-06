@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %>
+<body>
+    <%- include('./partials/headercat') %>
+
+    <main>
+
+        <div class = "show-producto">
+            <img src="/images/<%= producto.imagen %>" width="100%" id="imagenPrincipal"> 
+        <section class="sectionRight">
+            <form action  ="/products/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <label for="nombre">Nombre: </label>
+                <input name= "nombre" type="text"  value="<%=producto.nombre %>">
+                <br>
+                <br>
+                <label for="descuento">Descuento: </label>
+                <input name= "descuento" type="text" value="<%=producto.descuento %>">
+                <br>
+                <br>
+                <label for="precio">Precio: </label>
+                <input name= "precio" type="text" placeholder="<%=producto.precio %>" value ="<%=producto.precio %>">
+                <br>
+                <br>
+                <label for="imagen">Imagen: </label>
+                <input name= "imagen" type="file" >
+                <br>
+                <br>
+                <button class="product-botton" >Editar</button>
+                <p class="cuotas">Hasta 12 cuotas sin interes</p>
+            </form>
+        </section>
+
+    </div>
+    </main>
+
+
+
+    <%- include('./partials/footer') %>
+
+</body>
+</html>

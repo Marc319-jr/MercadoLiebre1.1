@@ -22,13 +22,14 @@
             </div>
         <% } else { %>
         <section class = "articulos">
-            <% for(let i = 0; i<productos.length || i>3  ;i++) { %> 
+            <% for(let i = 0; i<productos.length && i<4 ;i++) { %> 
 
             <article>
-                <a href = "./products/product">
+                <a href = "./products/product?id=<%= productos[i].id %>">
                 <div class = "imagen">
-                    <img src = "/images/<%= productos[i].imagen %>" alt = "" width = "100%">
+                    <img src = "/images/<%= productos[i].imagen ? productos[i].imagen : 'default.png' %>" alt = "" width = "100%">
                 </div>
+                <div class = "detalle">
                 <div class = "truck">
                     <i class="fas fa-truck"></i>
                 </div>
@@ -37,18 +38,49 @@
                 </div>
 
                 <div class = "descuento">
-                    <h3> <%= productos[i].descuento %> OFF</h3>
+                    <h3> <%= productos[i].descuento %>% OFF</h3>
                 </div>
-            
+            </div>
+
                  <div class = "nombre">
                     <h3> <%= productos[i].nombre %> </h3>
                 </div>
             </a>
             </article>
             <%  } %>
+        </section>
+
+        <section class = "articulos">
+            <% for(let i = 0; i<productos.length && i<4 ;i++) { %> 
+
+            <article>
+                <a href = "./products/product?id=<%= productos[i].id %>">
+                <div class = "imagen">
+                    <img src = "/images/<%= productos[i].imagen ? productos[i].imagen : 'default.png' %>" alt = "" width = "100%">
+                </div>
+                <div class = "detalle">
+                <div class = "truck">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class = "precio">
+                    <h3>$<%= productos[i].precio %> </h3>
+                </div>
+
+                <div class = "descuento">
+                    <h3> <%= productos[i].descuento %>% OFF</h3>
+                </div>
+            </div>
+
+                 <div class = "nombre">
+                    <h3> <%= productos[i].nombre %> </h3>
+                </div>
+            </a>
+            </article>
+            <%  } %>
+        </section>
+
             <%  } %>
     
-    </section>
 </section>
 
 </div>

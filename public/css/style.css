@@ -26,6 +26,7 @@ body {
 .main-header {
     background-color: #EAC926;    
     padding: 20px;
+    z-index: 200;
 }
 
 
@@ -349,71 +350,86 @@ footer h3{
 
     }
 
+    body .categorias .categoria .articulos article .imagen img{
+        margin: 10px 0;
+        padding: 10px;
+        z-index: 0;
+    }
+
     body .categorias .categoria .articulos article{
         margin: 10px;
-        flex: 1 1 45%;
+        flex: 1 1 40%;
         box-shadow: 0 2px 2px rgba (0,0,0,0.2);
         border-radius: 15px;
     }
 
     body .categorias .categoria .articulos article:hover{
         transform: translateY(-15px);
-        box-shadow: 0 15px 2px rgba (0,0,0,0.2);
+        box-shadow: 10px 10px 2px rgba(161, 147, 147, 0.322);
+        transition: 0.5s;
+
     }
 
 
-    .categoria .articulos article .detalle{
+    body .categorias .categoria .articulos article .nombre{
         display: flex;
         justify-content: space-between;
         border-top: 3px solid  #ebebeb;
-        padding: 18px 0;
-        margin-top: 5px;
+        margin-top: 10px;
+        padding: 10px;
 
     }
 
     body .categorias .categoria .articulos article .nombre:hover{
         opacity: 1;
+        display: flex;
+        transition: 0.2s;
     }
 
 
         
-    .categoria .articulos article .detalle .precio{
+    body .categorias .categoria .articulos article .detalle .precio{
         flex: 0.1 1 auto;
     }
 
-    .categoria .articulos article .detalle .descuento h3 {
-        margin-top: 4px;  
+    body .categorias .categoria .articulos article .detalle .descuento h3 {
         width: auto
     }
 
-    .categoria .articulos article .detalle .descuento{
+    body .categorias .categoria .articulos article .detalle .descuento{
         flex: 12 1 auto
     }
 
-    .categoria .articulos article .detalle .truck{
+    body .categorias  .categoria .articulos article .detalle .truck{
         background-color: white;
         order: 3;
         margin-top:-50px;
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 90%
     }
-    .categoria .articulos article .detalle .truck i{
+    body .categorias .categoria .articulos article .detalle .truck i{
         font-size: 24px;
-        margin-top: -5px;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
     }
 
    
 
-    .categoria .articulos article .nombre h3{
+    body .categorias .categoria .articulos article .nombre h3{
         margin: 0;
         width: auto;
         padding-left: 12px;
     }
 
  
-    .categoria .articulos article .detalle div{
-        margin: 10px;
-        padding: 10px;
+    body .categorias .categoria .articulos article .detalle{
+        border-top: 1px solid black;
+        padding: 20px;
     }
 
 }

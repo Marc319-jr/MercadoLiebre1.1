@@ -8,13 +8,12 @@
         <main>
 
             <div class = "show-producto">
-                <img src="/images/cafetera.jpg" width="100%" id="imagenPrincipal"> 
+                <img src="/images/<%= producto.imagen %>" width="100%" id="imagenPrincipal"> 
             <section class="sectionRight">
          
-                <form action="" method="">
-                    <h1>Cafetera Molix</h1>
-                    <h3 class = "descuento">40% off</h3>
-                    <h3>$17.555</h3>
+                    <h1><%=producto.nombre %></h1>
+                    <h3 class = "descuento"><%=producto.descuento %>% OFF</h3>
+                    <h3><%=producto.precio %></h3>
                     <div class="counter">
                         <span class="down" onClick='decreaseCount(event, this)'>-</span>
                         <input type="text" value="1">
@@ -22,8 +21,11 @@
                     </div>
                     <button class="product-botton" >Agregar al carrito</button>
                     <p class="cuotas">Hasta 12 cuotas sin interes</p>
+                    <button><a href="/products/edit/<%= producto.id%>">Editar</a></button>
+                    <form method = "POST" action="/products/delete/<%= producto.id %>?_method=DELETE">
+                        <button>Delete</button>
+                        </form>
 
-                </form>
             </section>
 
         </div>

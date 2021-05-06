@@ -18,12 +18,19 @@ const storage = multer.diskStorage({
 let fileUpload = multer({storage});
 
 
-
+//gets
 router.get('/product' ,productsController.show);
 router.get('/crear', productsController.crear);
+router.get('/edit/:id' ,productsController.edit);
 
-
+//post
 router.post('/crear' ,fileUpload.single('imagen') , productsController.save);
+
+//put
+router.put('/:id', fileUpload.single('imagen'),productsController.update);
+
+//delete
+router.delete('/delete/:id' , productsController.delete);
 
 
 
